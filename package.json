@@ -1,13 +1,28 @@
 {
-    "name": "q-json-translate",
+    "name": "json-translator",
     "version": "0.0.0",
     "description": "Replaces URI template tokens with translations",
-    "main": "index.js",
+    "main": "./lib/index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "coverage": "jest --coverage"
     },
     "author": "CICA",
     "license": "MIT",
+    "devDependencies": {
+        "eslint": "^6.8.0",
+        "eslint-config-airbnb-base": "^14.0.0",
+        "eslint-config-prettier": "^6.9.0",
+        "eslint-plugin-import": "^2.19.1",
+        "eslint-plugin-jest": "^23.3.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "fs-extra": "^8.1.0",
+        "husky": "^4.0.3",
+        "jest": "^26.6.3",
+        "lint-staged": "^9.5.0",
+        "prettier": "^1.19.1",
+        "q-base-config": "github:CriminalInjuriesCompensationAuthority/q-base-config#v0.10.0"
+    },
     "_m0": {
         "devDependencies": {
             "eslint": "^6.8.0",
@@ -18,7 +33,7 @@
             "eslint-plugin-prettier": "^3.1.2",
             "fs-extra": "^8.1.0",
             "husky": "^4.0.3",
-            "jest": "^24.9.0",
+            "jest": "^26.6.3",
             "lint-staged": "^9.5.0",
             "prettier": "^1.19.1"
         },
@@ -37,18 +52,9 @@
             "stuff/____README____"
         ]
     },
-    "devDependencies": {
-        "eslint": "^6.8.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-config-prettier": "^6.9.0",
-        "eslint-plugin-import": "^2.19.1",
-        "eslint-plugin-jest": "^23.3.0",
-        "eslint-plugin-prettier": "^3.1.2",
-        "fs-extra": "^8.1.0",
-        "husky": "^4.0.3",
-        "jest": "^24.9.0",
-        "lint-staged": "^9.5.0",
-        "prettier": "^1.19.1",
-        "q-base-config": "github:CriminalInjuriesCompensationAuthority/q-base-config#v0.9.0"
+    "dependencies": {
+        "i18next": "^20.3.1",
+        "json-pointer": "^0.6.1",
+        "url-template": "^2.0.8"
     }
 }
